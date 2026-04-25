@@ -33,7 +33,7 @@ public class A02 {
         
         // Recorro el Iterator y elimino los multiplos de 3, al hacerlo lo estoy quitando del ArrayList numeros
         while(it.hasNext()){
-            Integer n_act = it.next();
+            int n_act = it.next();
             
             if (n_act%3 == 0){
                 it.remove();
