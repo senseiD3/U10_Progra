@@ -11,18 +11,16 @@ public class A03 {
         Collection<Integer> l1 = new ArrayList<>();
         Collection<Integer> l2 = new ArrayList<>();
         
-        for (int cont = 0; cont < 21; ++cont){
+        for (int cont = 0; cont < 20; ++cont){
             int n = aleatorio.nextInt(10)+1; // Del 1 al 10 incluido
             l1.add(n);
         }
         
         System.out.println("l1 contiene: " + l1.toString());
         
-        for (int cont = 0; cont < 21; ++cont){
-            int n = aleatorio.nextInt(10)+1; // Del 1 al 10 incluido
-            
-            if (!l1.contains(n)){
-                l2.add(n);
+        for (Integer num_act : l1){
+            if (!l2.contains(num_act)){
+                l2.add(num_act);
             }
         }
         
