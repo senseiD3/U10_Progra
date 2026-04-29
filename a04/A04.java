@@ -11,7 +11,7 @@ public class A04 {
         
         Collection<Integer> numeros = new ArrayList<>();
         
-        for (int cont = 0; cont < 101; ++cont){
+        for (int cont = 0; cont < 100; ++cont){
             int n = aleatorio.nextInt(10)+1; // Del 1 al 10 incluido
             numeros.add(n);
         }
